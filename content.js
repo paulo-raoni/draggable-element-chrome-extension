@@ -91,7 +91,7 @@ const scriptWrapper = (imageBase64, height, width) => {
 
     moverElement.setAttribute(
       "style",
-      ` cursor: move,
+      ` cursor: move;
           z-index: 1000000000000000000001;
           color: #fff;
           margin: 0;
