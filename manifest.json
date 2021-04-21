@@ -3,12 +3,6 @@
     "name": "Draggable Element Creator",
     "version": "0.0.1",
     "description": "Creates an element draggable with a photo",
-    "background": {
-        "scripts": [
-            "background.js"
-        ],
-        "persistent": false
-    },
     "content_scripts": [
         {
             "matches": [
