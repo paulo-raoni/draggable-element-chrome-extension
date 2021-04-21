@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Draggable Element Creator",
+    "version": "1.0",
+    "description": "Creates an element draggable with a photo",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"                
+            ]
+        }
+    ],
+    "browser_action": {
+        "defaul_icon": "icons/drag-and-drop-16.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "icons": {
+        "128": "icons/drag-and-drop-128.png",
+        "48": "icons/drag-and-drop-48.png",
+        "16": "icons/drag-and-drop-16.png"
+    }
+}
